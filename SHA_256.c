@@ -58,7 +58,6 @@ static uint64_t Calculating_Chunk_Length(unsigned char * Input)
 {
 	uint64_t length;
     for (length = 0; *(Input + length) != '\0'; length++);
-    printf("length=%x\n", length);
     return length;
 }
 
