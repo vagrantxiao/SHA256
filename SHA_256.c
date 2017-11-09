@@ -156,10 +156,10 @@ void SHA_256(unsigned char * Input, uint32_t * Output)
 	SHA_256_Hash_init();
 	for (i = 0; i < Chunk_Quantity; i++)
 	{
-		SHA_256_Hash(Ini_Chunk + 64 * i, Output + 8 * i);
+		SHA_256_Hash(Ini_Chunk + 64 * i, Output);
 		for (int j = 0; j < 8; j++)
 		{
-			printf("%08x\t", Output[i * 8 + j]);
+			//printf("%08x\t", Output[i * 8 + j]);
 		}
 		printf("\n");
 	}
